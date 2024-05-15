@@ -14,4 +14,14 @@
     <string name="mecanica">Ingenira Mecanica</string>
     <string name="admin" />
     <string name="admi">Aministracion</string>
+    <string name="convocatoria">¿Por qué medio se enteró de la convocatoria?</string>
+    <string name="envio">Enviar</string>
+    <string name="Apellidos_nombre">apellidos y nombres</string>
+    <string name="Apellido">Nombre</string>
+    <string name="fecha3" />
+    <string name="correo3" />
+    <string name="radio">Radio</string>
+    <string name="internet">Internet</string>
+    <string name="amigo">Amigo</string>
+    <string name="publicidad">Publicidad</string>
 </resources>

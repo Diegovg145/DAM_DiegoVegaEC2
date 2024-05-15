@@ -4,26 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FF9800"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="188dp"
         android:layout_height="26dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="4dp"
         android:text="CREAR CUENTAS UNTELS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.041" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/Apellidos_Nombres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/Apellidos_Nombres"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         tools:layout_editor_absoluteX="37dp" />
@@ -32,16 +33,14 @@
         android:id="@+id/Correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/Correo"
         app:layout_constraintStart_toStartOf="@+id/Apellidos_Nombres"
-        app:layout_constraintTop_toBottomOf="@+id/Apellidos_Nombre2" />
+        app:layout_constraintTop_toBottomOf="@+id/Apellidos_nombres" />
 
     <TextView
         android:id="@+id/Contraseña"
         android:layout_width="35dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/Contraseña"
         app:layout_constraintStart_toStartOf="@+id/Correo"
         app:layout_constraintTop_toBottomOf="@+id/Correo2" />
@@ -50,7 +49,6 @@
         android:id="@+id/Fecha"
         android:layout_width="132dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/Fecha"
         app:layout_constraintStart_toStartOf="@+id/Contraseña"
         app:layout_constraintTop_toBottomOf="@+id/Contraseña2" />
@@ -59,50 +57,41 @@
         android:id="@+id/carrera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/carrera"
         app:layout_constraintStart_toStartOf="@+id/Fecha"
         app:layout_constraintTop_toBottomOf="@+id/Fecha2" />
 
     <EditText
-        android:id="@+id/Apellidos_Nombre2"
-        android:layout_width="200dp"
-        android:layout_height="20dp"
-        android:ems="10"
-        android:inputType="@string/Apellidos_Nombres2"
-        app:layout_constraintStart_toStartOf="@+id/Apellidos_Nombres"
-        app:layout_constraintTop_toBottomOf="@+id/Apellidos_Nombres" />
-
-    <EditText
         android:id="@+id/Correo2"
-        android:layout_width="204dp"
-        android:layout_height="17dp"
+        android:layout_width="219dp"
+        android:layout_height="40dp"
         android:ems="10"
-        android:inputType="@string/Correo2"
+        android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="@+id/Correo"
         app:layout_constraintTop_toBottomOf="@+id/Correo" />
 
     <EditText
         android:id="@+id/Contraseña2"
-        android:layout_width="205dp"
-        android:layout_height="24dp"
+        android:layout_width="219dp"
+        android:layout_height="38dp"
         android:ems="10"
-        android:inputType="@string/Contraseña2"
+        android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="@+id/Contraseña"
         app:layout_constraintTop_toBottomOf="@+id/Contraseña" />
 
     <EditText
         android:id="@+id/Fecha2"
-        android:layout_width="197dp"
-        android:layout_height="19dp"
+        android:layout_width="218dp"
+        android:layout_height="40dp"
         android:ems="10"
-        android:inputType="@string/Fecha2"
+        android:text="@string/fecha3"
         app:layout_constraintStart_toStartOf="@+id/Fecha"
         app:layout_constraintTop_toBottomOf="@+id/Fecha" />
 
     <RadioGroup
-        android:layout_width="150dp"
-        android:layout_height="192dp"
+        android:id="@+id/radioGroup"
+        android:layout_width="188dp"
+        android:layout_height="98dp"
         app:layout_constraintStart_toStartOf="@+id/carrera"
         app:layout_constraintTop_toBottomOf="@+id/carrera">
 
@@ -117,6 +106,85 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/ambiental" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/convocatoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convocatoria"
+        app:layout_constraintStart_toStartOf="@+id/carrera"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="176dp"
+        android:layout_height="97dp"
+        app:layout_constraintStart_toStartOf="@+id/convocatoria"
+        app:layout_constraintTop_toBottomOf="@+id/convocatoria">
+
+        <CheckBox
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio" />
+
+        <CheckBox
+            android:id="@+id/internet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/internet" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/envio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/envio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Apellidos_nombres"
+        android:layout_width="214dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Apellidos_Nombres2"
+        app:layout_constraintStart_toStartOf="@+id/Apellidos_Nombres"
+        app:layout_constraintTop_toBottomOf="@+id/Apellidos_Nombres" />
+
+    <RadioGroup
+        android:layout_width="151dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup2">
+
+        <CheckBox
+            android:id="@+id/amigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/amigo" />
+
+        <CheckBox
+            android:id="@+id/publicidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/publicidad" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="176dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="192dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/carrera">
 
         <RadioButton
             android:id="@+id/mecanica"
