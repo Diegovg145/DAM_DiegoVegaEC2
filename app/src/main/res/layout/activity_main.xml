@@ -7,12 +7,128 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/textView8"
+        android:layout_width="188dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="2dp"
+        android:text="CREAR CUENTAS UNTELS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <TextView
+        android:id="@+id/Apellidos_Nombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/Apellidos_Nombres"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:layout_editor_absoluteX="37dp" />
+
+    <TextView
+        android:id="@+id/Correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/Correo"
+        app:layout_constraintStart_toStartOf="@+id/Apellidos_Nombres"
+        app:layout_constraintTop_toBottomOf="@+id/Apellidos_Nombre2" />
+
+    <TextView
+        android:id="@+id/Contraseña"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/Contraseña"
+        app:layout_constraintStart_toStartOf="@+id/Correo"
+        app:layout_constraintTop_toBottomOf="@+id/Correo2" />
+
+    <TextView
+        android:id="@+id/Fecha"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/Fecha"
+        app:layout_constraintStart_toStartOf="@+id/Contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/Contraseña2" />
+
+    <TextView
+        android:id="@+id/carrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/carrera"
+        app:layout_constraintStart_toStartOf="@+id/Fecha"
+        app:layout_constraintTop_toBottomOf="@+id/Fecha2" />
+
+    <EditText
+        android:id="@+id/Apellidos_Nombre2"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:ems="10"
+        android:inputType="@string/Apellidos_Nombres2"
+        app:layout_constraintStart_toStartOf="@+id/Apellidos_Nombres"
+        app:layout_constraintTop_toBottomOf="@+id/Apellidos_Nombres" />
+
+    <EditText
+        android:id="@+id/Correo2"
+        android:layout_width="204dp"
+        android:layout_height="17dp"
+        android:ems="10"
+        android:inputType="@string/Correo2"
+        app:layout_constraintStart_toStartOf="@+id/Correo"
+        app:layout_constraintTop_toBottomOf="@+id/Correo" />
+
+    <EditText
+        android:id="@+id/Contraseña2"
+        android:layout_width="205dp"
+        android:layout_height="24dp"
+        android:ems="10"
+        android:inputType="@string/Contraseña2"
+        app:layout_constraintStart_toStartOf="@+id/Contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/Contraseña" />
+
+    <EditText
+        android:id="@+id/Fecha2"
+        android:layout_width="197dp"
+        android:layout_height="19dp"
+        android:ems="10"
+        android:inputType="@string/Fecha2"
+        app:layout_constraintStart_toStartOf="@+id/Fecha"
+        app:layout_constraintTop_toBottomOf="@+id/Fecha" />
+
+    <RadioGroup
+        android:layout_width="150dp"
+        android:layout_height="192dp"
+        app:layout_constraintStart_toStartOf="@+id/carrera"
+        app:layout_constraintTop_toBottomOf="@+id/carrera">
+
+        <RadioButton
+            android:id="@+id/sistemas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sistemas" />
+
+        <RadioButton
+            android:id="@+id/ambiental"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ambiental" />
+
+        <RadioButton
+            android:id="@+id/mecanica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mecanica" />
+
+        <RadioButton
+            android:id="@+id/admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/admi" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

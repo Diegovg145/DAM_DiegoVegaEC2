@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">DAM_DiegoVega</string>
+    <string name="Apellidos_Nombres">Apellidos y Nombre</string>
+    <string name="Correo">Correo Electronico</string>
+    <string name="Contraseña">Clave</string>
+    <string name="Apellidos_Nombres2" />
+    <string name="Correo2" />
+    <string name="Contraseña2" />
+    <string name="Fecha">Fecha de Nacimiento</string>
+    <string name="Fecha2">Fecha de Nacimiento2</string>
+    <string name="carrera">Carrera</string>
+    <string name="sistemas">Ingeniera de sistemas</string>
+    <string name="ambiental">Ingenieria Ambiental</string>
+    <string name="mecanica">Ingenira Mecanica</string>
+    <string name="admin" />
+    <string name="admi">Aministracion</string>
 </resources>
